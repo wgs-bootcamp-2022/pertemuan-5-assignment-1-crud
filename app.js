@@ -4,6 +4,8 @@ const express = require('express');
 const app = express();
 
 app.use(expressLayouts)
+app.use(express.urlencoded({ extended: true })); // Untuk parsing body request
+
 app.set('layout', './layout/home')
 app.set('view engine', 'ejs');
 

@@ -76,8 +76,8 @@ const addPostContact = [
             id: id,
             name: req.body.name,
             email: req.body.email,
-            number: req.body.number
-            // address: req.body.address
+            number: req.body.number,
+            address: req.body.address
           }
         const updateAccount = accounts.filter( contact => contact.id !== id )
         updateAccount.push(objparam)
@@ -116,7 +116,8 @@ const editPostContact = [
             id: id,
             name: req.body.name,
             email: req.body.email,
-            number: req.body.number
+            number: req.body.number,
+            address: req.body.address
         }
         const updateAccount = accounts.filter( contact => contact.id !== id )
         updateAccount.push(objparam)
